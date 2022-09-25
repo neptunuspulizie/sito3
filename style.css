@@ -201,7 +201,7 @@ left: 25%;
 }
 
 .hero button:hover{
-    background-color: #000;
+    background-color: lightblue;
     color: #f1f1f1;
 }
 .hero i{
@@ -636,7 +636,9 @@ margin: 10px;
     color: #000;
     background-color: lightblue;
     text-align: center;
-    text-decoration: none;
+    text-decoration: none; color: #000;
+    text-decoration: none;text-align: center;align-items: center;justify-content: center;
+   display: flex;
 
   }
   
