@@ -1,0 +1,797 @@
+/* UTILITIES */
+body{
+   margin: 0;
+   padding: 0;
+    font-family:'Montserrat';
+    overflow-x: hidden!important; 
+    
+   }
+   html {
+    scroll-behavior: smooth;
+  }
+   @media (max-width: 600px){
+  
+   }
+   
+
+   /* NAVBAR STYLING STARTS */
+.navbar {
+    
+    width: 100%;
+   height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+    
+    color: black;
+   }
+   .navbar  a {
+    text-decoration: none;
+ 
+   }
+   .navbar li {
+    list-style: none;
+
+
+   }
+   .nav-links a {
+    color: black;
+   
+
+   }
+   /* LOGO */
+   .logo {
+   
+    width: 150px;
+    object-fit: contain;
+   display: flex;
+   align-items: center;
+    z-index: 10;
+    overflow: hidden;
+
+
+
+   }
+.logo img{
+    width: 100%;
+}
+
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    font-size: 18px;
+   }
+   .menu li:hover {
+    background-color: lightblue;
+    border-radius: 10px;
+    transition: 0.5s ease;
+   }
+   .menu li {
+    padding: 5px 10px;
+   }
+   .contatto{
+    text-decoration: underline;
+    font-weight: bold;
+    position: relative;
+   }
+   .dropdown {
+    background-color: lightblue;
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+   }
+   .dropdown li + li {
+    margin-top: 10px;
+   }
+   .dropdown li {
+    padding: 0.5em 1em;
+    width: 15em;
+    text-align: center;
+   }
+   .dropdown li:hover {
+    text-decoration: underline;
+   }
+   .contatto:hover .dropdown {
+    display: block;
+   }
+   /*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   }
+   /* APPLYING MEDIA QUERIES */
+   @media (max-width: 600px) {
+   .menu { 
+    z-index: 1;
+    display:none;
+    position: absolute;
+    background-color:lightblue;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+   }
+   .menu li:hover {
+    display: inline-block;
+    background-color:lightblue;
+    transition: 0.3s ease;
+   }
+   .menu li + li {
+    margin-top: 12px;
+   }
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+   .hamburger {
+    display: block;
+   }.dropdown {
+   left: 0%;
+   top: 30px;
+   font-size: medium;
+   
+  }
+  .dropdown li:hover {
+   text-decoration: underline;
+  }
+  }
+  
+
+
+      /* HERO */
+  .hero {
+   height: 100vh; 
+   width: 100%;
+
+background: url(img/PULITORE.jpg) no-repeat bottom right;
+background-size: 40%;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+
+
+
+
+}
+.hero-text{
+    
+    width: 50%;
+    height: 50%;
+   
+    margin: 10px;
+    text-align: center;
+  
+  
+}
+.hero-text hr{
+    
+left: 25%;
+    width: 50%;
+    
+}
+.hero-text h1{
+    opacity: 1;
+    font-size: 3rem;
+   
+}
+.hero button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.hero button:hover{
+    background-color: #000;
+    color: #f1f1f1;
+}
+
+@media screen and (max-width: 600px){
+    .hero{
+       padding-left: 10%;
+        height: 100vh;
+        background-size: 50%;
+        justify-content: center;
+
+    }
+   
+}
+/* DIVIDER */
+.divider{
+  width: 100%;
+  display: flex;
+  height: 15vh;
+align-items: center;
+justify-content: center;
+overflow-x: hidden;
+  
+  
+
+}
+.divider img{
+  height: 50%;
+  margin: 0 25px;
+
+}
+@media screen and (max-width: 600px){
+  .divider img{
+    height: 50%;
+    margin: 0 5px;
+  }  
+}
+/* SERVIZI */
+
+.servizi{
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+    padding: 20px;
+    border-bottom: 7px ;
+border-radius: 0px 0px 40px 40px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ text-align: center;
+ font-size: larger;
+}
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 5 -5px;
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    border-radius: 15px;
+margin: 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+
+  }
+.card img{   width: 64px;
+}
+/* CTA2 */
+.servizi1{
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servizi1 button{
+    width:350px;
+    height: 60px;
+    border-radius: 15px;
+    margin: 5px;
+    font-size: 40px;
+    border:  4px solid green;
+    background-color: #fff;
+    
+}
+.servizi1 button:hover{
+    background-color: green;
+    color: #f1f1f1;
+}
+@media screen and (max-width: 600px)
+{
+    .cta2-content{
+        width: 100%;
+    }
+}
+/* CONTATTACI */
+
+.contattaci{
+    height: 100vh;
+    width: 100%;
+   text-align: center;
+   font-size: larger;
+}
+
+   
+ 
+/* Float four columns side by side */
+.columnc {
+    float: left;
+    width: 33%;
+    padding: 0 10px;
+  }
+  
+    
+  /* Remove extra left and right margins, due to padding */
+  .rowc {margin: 5 -5px;
+}
+  
+  /* Clear floats after the columns */
+  .rowc:after {
+    content: "";
+    display: table;
+    clear: both;
+
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .columnc {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .cardc {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    border-radius: 15px;
+margin: 10px;
+    text-align: center;
+    background-color: lightblue;
+  }
+/* DICONO DI NOI */
+.recensioni{
+    text-align: center;
+    font-size: larger;
+}
+.fa-star{
+    color: rgb(247, 247, 25);
+}
+  .column2 {
+    float: left;
+    width: 33%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row2 {margin: 5 -5px;
+}
+  
+  /* Clear floats after the columns */
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column2 {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card2 {
+    box-shadow: 0 4px 8px 0 lightblue;
+    padding: 16px;
+    border-radius: 15px;
+margin: 10px;
+    text-align: center;
+    background-color: #FFF;
+
+  }
+.card2 img{   width: 64px;
+}
+
+
+  /* PREVENTIVO */
+.preventivo{
+    height: 100%;
+    width: 100%;
+    padding:50px;
+    justify-content:center;
+    align-items: vertical;
+    text-align: center;
+    font-size: x-large;
+    background: url(img/mockup.jpg) no-repeat bottom right;
+    background-size: 30%;
+    overflow-x: hidden;
+    
+}
+.preventivo p{
+    margin:20px
+    
+}
+.preventivo button{
+    width:250px;
+    height: 40px;
+    border-radius: 15px;
+    margin: 5px;
+    font-size: 20px;
+}
+.preventivo button:hover{
+    background-color: #000;
+    color: #f1f1f1;
+}
+@media screen and (max-width: 600px){
+  .preventivo{
+    background-size: 70%;
+    background: top right;
+  }
+}
+  /* FOOTER */
+  
+  
+  .footer-distributed{
+    background: lightblue;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+  }
+  .footer-distributed img{
+    height: 10%;
+    width: 150px;
+  }
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  /* Footer left */
+  
+  .footer-distributed .footer-left{
+    width: 40%;
+  }
+  
+  /* The company logo */
+  
+  .footer-distributed h3{
+    color:  #000;
+    
+    margin: 0;
+  }
+  
+  .footer-distributed h3 span{
+    color:  lightseagreen;
+  }
+  
+  /* Footer links */
+  
+  .footer-distributed .footer-links{
+    color:  #000;
+    margin: 20px 0 12px;
+    padding: 0;
+  }
+  
+  .footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    font-weight:400;
+    text-decoration: none;
+    color:  inherit;
+  }
+  
+  .footer-distributed .footer-company-name{
+    color:  #222;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  /* Footer Center */
+  
+  .footer-distributed .footer-center{
+    width: 35%;
+  }
+  
+  .footer-distributed .footer-center i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+  }
+  
+  .footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+  }
+  
+  .footer-distributed .footer-center p{
+    display: inline-block;
+    color: #000;
+    font-weight:400;
+    vertical-align: middle;
+    margin:0;
+  }
+  
+  .footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+  }
+  
+  .footer-distributed .footer-center p a{
+    color:  lightslategray;
+    text-decoration: none;;
+  }
+  
+  .footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight:300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .footer-distributed .footer-links .link-1:before {
+    content: none;
+  }
+  
+  /* Footer Right */
+  
+  .footer-distributed .footer-right{
+    width: 20%;
+  }
+  
+  .footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  lightslategray;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .footer-distributed .footer-company-about span{
+    display: block;
+    color:  #000;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer-distributed .footer-icons{
+    margin-top: 25px;
+  }
+  
+  .footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+  
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+  
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  .top{
+    position: absolute;
+    right: 70px; 
+
+  }
+  .top button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 2em;
+    color: #000;
+    background-color: lightblue;
+
+  }
+  .top button:hover{
+    color: lightblue;
+    background-color: #000;
+  }
+  
+  /* If you don't want the footer to be responsive, remove these media queries */
+  
+  @media (max-width: 600px) {
+    .footer{
+      height: 200%;
+    }
+  
+    .footer-distributed{
+      font: bold 14px sans-serif;
+    }
+  
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  
+    .footer-distributed .footer-center i{
+      margin-left: 0;
+    }
+  
+  }
+
+
+
+
+  .loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    
+  }
+  .loader img
+  {
+
+width: 80%;
+animation: none;
+
+  }
+  .loader-wrapper .loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: -50px;
+    margin-left: -50px;
+    border: 3px solid transparent;
+    border-top-color: lightblue;
+    border-radius: 50%;
+    z-index: 1001;
+    -webkit-animation: spin 1.5s infinite linear;
+            animation: spin 1.5s infinite linear;
+  }
+  .loader-wrapper .loader:before, .loader-wrapper .loader:after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+  }
+  .loader-wrapper .loader:before {
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 3px solid transparent;
+    border-top-color:blue;
+    -webkit-animation: spin 2s infinite linear;
+            animation: spin 2s infinite linear;
+  }
+  .loader-wrapper .loader:after {
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 3px solid transparent;
+    border-top-color: lightblue;
+    -webkit-animation: spin 1s infinite linear;
+            animation: spin 1s infinite linear;
+  }
+  
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  /*Section */
+.loader-section {
+  position: fixed;
+  top: 0;
+  width: 51%;
+  height: 100%;
+  background: #fff9f9;
+  z-index: 1000;
+}
+.loader-section.section-left {
+  left: 0;
+}
+.loader-section.section-right {
+  right: 0;
+}
+
+/*Finished Loading Styles*/
+.loaded .section-left {
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.loaded .section-right {
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+.loaded .loader {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+}
+.loaded .loader-wrapper {
+  visibility: hidden;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.3s 1s ease-out;
+  transition: all 0.3s 1s ease-out;
+}
+
+
+
+
+
+
+
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
