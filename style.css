@@ -10,7 +10,9 @@ body{
     scroll-behavior: smooth;
   }
    @media (max-width: 600px){
-  
+  a{
+    text-decoration: none;
+  }
    }
    
 
@@ -626,8 +628,11 @@ margin: 10px;
     font-size: 2em;
     color: #000;
     background-color: lightblue;
+    text-align: center;
+    text-decoration: none;
 
   }
+  
   .top button:hover{
     color: lightblue;
     background-color: #000;
