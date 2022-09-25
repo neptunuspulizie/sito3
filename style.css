@@ -196,8 +196,9 @@ left: 25%;
     text-decoration: none;
     font-size: 20px;
     color: #000;
-    text-decoration: none;text-align: center;align-items: center;justify-content: center;
-   display: flex;
+    text-decoration: none!important;
+    text-align: center;align-items: center;justify-content: center;
+   
 }
 
 .hero button:hover{
@@ -214,6 +215,10 @@ left: 25%;
         height: 100vh;
         background-size: 50%;
         justify-content: center;
+
+    }
+    .hero button {
+      display: flex;
 
     }
    
