@@ -203,6 +203,9 @@ left: 25%;
     background-color: #000;
     color: #f1f1f1;
 }
+.hero i{
+  color: #000;
+}
 
 @media screen and (max-width: 600px){
     .hero{
