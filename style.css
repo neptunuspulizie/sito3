@@ -645,7 +645,7 @@ margin: 10px;
     background-color: lightblue;
     text-align: center;
     text-decoration: none!important; color: #000;
-    text-decoration: none;text-align: center;align-items: center;justify-content: center;
+    text-align: center;align-items: center;justify-content: center;
    display: flex;
 
   }
