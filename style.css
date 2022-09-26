@@ -212,7 +212,7 @@ left: 25%;
 @media screen and (max-width: 600px){
     .hero{
        padding-left: 10%;
-        height: 100vh;
+        height: 100%;
         background-size: 50%;
         justify-content: center;
         align-items: center;
