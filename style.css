@@ -228,7 +228,7 @@ left: 25%;
     
     .hero button {
     
-
+display: inline-flex;
     }
    
 }
