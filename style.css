@@ -218,6 +218,14 @@ left: 25%;
         align-items: center;
 
     }
+    .hero-text{
+    
+      width: 70%;
+      height: 50%;
+     
+      margin: 10px;
+      text-align: center;}
+    
     .hero button {
     
 
